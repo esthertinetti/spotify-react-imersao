@@ -19,10 +19,12 @@ const Sidebar = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="/#">
-                            <span className="fa fa-search"></span>
-                            <span>Buscar</span>
-                        </a>
+                        <button class="sidebar-search" id="sidebar-search" type="button">
+                            <span class="fa fa-search"></span>
+                            <span>
+                                Buscar
+                            </span>
+                        </button>
                     </li>
                 </ul>
             </nav>

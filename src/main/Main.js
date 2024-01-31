@@ -82,6 +82,12 @@ const Main = () => {
 
         });
 
+        const buttonSearch = document.getElementById('sidebar-search');
+
+        buttonSearch.addEventListener('click', function () {
+            searchInput.focus();
+        });
+
     }, "100")
 
     return (

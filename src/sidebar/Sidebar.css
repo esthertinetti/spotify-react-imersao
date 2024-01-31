@@ -33,19 +33,27 @@
     padding: 10px 0;
 }
 
-.sidebar nav ul li a {
+.sidebar nav ul li a,
+.sidebar .sidebar-search {
     color: #b3b3b3;
     font-weight: 600;
     font-size: 14px;
     transition: 300ms all ease-in-out;
 }
 
-.sidebar nav ul li a:hover {
+.sidebar nav ul li a:hover,
+.sidebar .sidebar-search:hover {
     color: #FFFFFF;
 }
 
-.sidebar nav ul li a .fa {
+.sidebar nav ul li a .fa,
+.sidebar .sidebar-search .fa {
     margin-right: 5px;
+}
+
+.sidebar .sidebar-search {
+    background: transparent;
+    padding: 0;
 }
 
 .library {
@@ -178,4 +186,11 @@
 
 .languages .languages__button .fa {
     margin-right: 5px;
+}
+
+@media (max-width: 991px) {
+    .sidebar {
+        position: initial;
+        width: auto;
+    }
 }
